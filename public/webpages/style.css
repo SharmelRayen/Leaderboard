@@ -1,78 +1,267 @@
-body{
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: rgb(18, 18, 18);
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background: rgb(3, 0, 54);
-    background: linear-gradient(90deg, rgb(3, 1, 39));
-}
-form{
-    margin: 20px 0px 20px 0px;
-    padding: 0;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-
 }
 
 .container {
-    margin-top: 80px;
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between; /* Distribute space between logos */
+    justify-content: space-between; 
     width: 100%;
-    max-width: 1200px; /* Limit the width */
-    padding: 0 20px;
+    max-width: 1200px; 
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
 }
 
-.logoLeft, .logoCenter, .logoRight {
+.logoLeft, .logoRight {
     height: 50px;
     width: auto;
-    padding: 0px 25px 0px 25px;
+}
+.leftOne{
+    padding-left: 0px;
+    padding-right: 100px;
+    padding-top: 0px;
+    padding-bottom: ;
+}
+
+.rightOne{
+    padding-left: 0%;
+    padding-right: 50px;
 }
 
 .logoLeft {
-    margin-right: auto; /* Align left */
-}
-
-.logoCenter {
-    margin: 0 auto; /* Center */
+    margin-right: auto; 
 }
 
 .logoRight {
-    margin-left: auto; /* Align right */
+    margin-left: auto; 
+    padding-right: 120px;
+    padding-left: 40px;
 }
 
-.heading {
+.Leaderboard {
+    text-align: left; /* Align content to the left */
+    width: 100%; /* Ensure it takes the full width */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center horizontally within the container */
+}
+.desc{
+    color: #ffffff;
+    max-width: 500px;
+    text-align: justify;
+    position: absolute;
+    padding-top: 120px;
+}
+.Leaderboard{
+    display: flex;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Leaderboard .heading {
+    max-width: auto;
     margin: 0;
     padding-bottom: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     font-size: 80px;
-    text-align: center; /* Center heading */
+    text-align: left; /* Align heading text to the left */
 }
 
-.vortex {
-    text-align: center;
-}
-
-.ovations {
-    height: 350px;
-    width: auto;
-}
 
 .table-container {
+    display: flex;
+    width: 100%;
+    max-width:auto;
+    padding: 30px 20px 0px 200px;
+    position: relative;
+}
+
+.content-table {
+    border-collapse:collapse;
+    width: fit-content;
+    font-size: 0.9em;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(0, 140, 255);
+}
+
+.content-table thead tr,.content-table-ev thead tr {
+    background-color: rgb(0, 140, 255);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th, .content-table td,.content-table-ev th,.content-table-ev td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr, .content-table-ev tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even),.content-table-ev tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:nth-of-type(odd),.content-table-ev tbody tr:nth-of-type(odd)  {
+    background-color: #ffffff;
+}
+
+.content-table tbody tr:last-of-type, .content-table-ev tbody tr:last-of-type{
+    border-bottom: 2px solid rgb(0, 140, 255);
+}
+
+.content-table tbody tr.active-row{
+    font-weight: bold;
+    color: rgb(0, 140, 255);
+}
+
+.content-table-ev tbody tr.active-row{
+    font-weight: bold;
+    color: rgb(0, 140, 255);
+}
+header {
+    background: #333;
+    color: #fff;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    padding-left: 80px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 10px;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.navbar-menu a:hover {
+    background: rgb(0, 140, 255);
+    border-radius: 10px 10px 10px 10px;
+}
+.LSC25-LOGO{
+    padding-top: 40px;
+    width: 100px;
+    height: auto;
+}
+.lsc{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.contact{
+    padding-left: 400px;
+    padding-top: 30px;
+}
+.lscimg{
+    padding-bottom: 50px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.navbar-toggle {
+    display: none;
+    background: #333;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Align drawer to the right */
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    transition: right 0.3s;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.drawer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drawer ul li {
+    padding: 15px;
+}
+
+.drawer ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.drawer ul li a:hover {
+    background: #555;
+}
+.heading2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 40px;
+}
+a{
+    color: rgb(255, 218, 8);
+}
+.drawer-close {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Close button inside drawer */
+    background: #333;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+}
+.comp1{
+    display: block;
+}
+.mail1,.mail2{
+    padding-top: 10px;
+    color: rgb(245, 191, 12);
+}
+
+.table-container-ev{
     width: 100%;
     max-width: 600px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
-.content-table {
+.content-table-ev{
     border-collapse: collapse;
     width: 100%;
     font-size: 0.9em;
@@ -80,231 +269,16 @@ form{
     overflow: hidden;
     box-shadow: 0 0 20px rgb(0, 140, 255);
 }
-
-.content-table thead tr {
-    background-color: rgb(0, 140, 255);
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
-}
-
-.content-table th, .content-table td {
-    padding: 12px 15px;
-}
-
-.content-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-.content-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.content-table tbody tr:nth-of-type(odd) {
-    background-color: #ffffff;
-}
-
-.content-table tbody tr:last-of-type {
-    border-bottom: 2px solid rgb(0, 140, 255);
-}
-
-.content-table tbody tr.active-row {
-    font-weight: bold;
-    color: rgb(0, 140, 255);
-}
-
-.navbar {
-    background-color: rgb(0, 140, 255);
-    padding: 15px 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-list li {
-    margin: 0 20px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease, transform 0.3s ease;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-
-.nav-list a:hover, .nav-list a:focus {
-    color: rgb(0, 140, 255);
-    background-color: rgba(3, 0, 54,0.90);
-    transform: translateY(-2px);
-}
-
-.table-head {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropbtn {
-    background-color: #110b66;
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 4px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #06065a;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 4px;
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-.dropdown-content a:hover {
-    background-color: #12085e;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #575757;
-}
-
-/* Responsive design */
-@media (max-width: 470px) {
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
+@media only screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide horizontal menu on mobile */
     }
 
-    .nav-list li {
-        margin: 10px 0;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logoLeft, .logoCenter, .logoRight {
-        margin: 10px 0;
-    }
-
-    .heading {
-        font-size: 60px;
-    }
-
-    .ovations {
-        height: 150px;
-    }
-}
-
-.menu-toggle {
-    display: none; /* Hidden by default */
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-}
-
-.nav-list.active {
-    display: flex;
-}
-
-@media (max-width: 430px) {
-    .menu-toggle {
+    .navbar-toggle {
         display: block;
     }
 
-    .nav-list {
-        display: none; /* Hidden by default */
-        flex-direction: column;
-        align-items: center;
+    .drawer {
+        right: 0; /* Show drawer */
     }
 }
-
-.text{
-    color: #ffffff;
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
-    margin-left: 200px;
-    margin-right: 200px;
-    text-align: center;
-    padding: 0;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.heading-O{
-    color: #ffffff;
-    font-size: 80px;
-    font-family:fantasy;
-    margin-top: 0px;
-}
-
-#CentLogo{
-    margin-right: 0px;
-    margin-left:  240px;
-}
-
-#Loyola{
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-#LSC25{
-    margin-left: 0px;
-    margin-right: 210   px;
-}
-
-.name{
-    color: white;
-    font-size: 15px;
-    font-family:'Times New Roman', Times, serif;
-    padding: 0px 30px 0px 30px;
-}
-
-.pos{
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight:bolder;
-    padding: 0px 30px 0px 30px;
-}
-a{
-    color: white;
-
-}
-

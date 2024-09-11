@@ -4,178 +4,513 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <link rel="icon" type="image/x-icon" href="../images/LSC25-LOGO ONLY.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../webpages/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="">
     <div class="container">
-        <img src="../../images/100.png" class="logoLeft" alt="Centernary Logo">
-        <img src="../../images/logo.png" class="logoCenter" alt="Loyola College">
-        <img src="../../images/LSC25-LOGO ONLY.png" class="logoRight" alt="LSC25-LOGO"><br>
-    </div>
-    <nav class="navbar">
-        <ul class="nav-list">
+        <img src="../../images/logo.png" class="logoLeft" alt="Loyola College">
+        <img src="../../images/100.png" class="logoRight" alt="Centernary Logo">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <button class="navbar-toggle" id="navbar-toggle">
+                    ☰
+                </button>
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="onStage.html">On-Stage</a></li>
+                    <li><a href="offStage.html">Off-Stage</a></li>
+                    <li><a href="online.html">Online</a></li>
+                </ul>
+            </div>
+        </nav>
+    <div id="drawer" class="drawer">
+        <button class="drawer-close" id="drawer-close">×</button>
+        <ul>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
             <li><a href="../index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Events</a>
-                <div class="dropdown-content">
-                    <a href="onStage.html">On-Stage</a>
-                    <a href="offStage.html">Off-Stage</a>
-                    <a href="online.html">Online</a>
-                </div>
-            </li>
-            <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+            <li><a href="onStage.html">On-Stage</a></li>
+            <li><a href="offStage.html">Off-Stage</a></li>
+            <li><a href="online.html">Online</a></li>
         </ul>
-    </nav>  
-    
-    <div class="vortex">
+    </div>
+    </div>  
+    <center><div class="vortex">
         <img src="../../images/vortex.png" class="ovations" alt="" height="200px">
-    </div>
-    <p class="heading">
-        ONLINE EVENTS
-    </p>
-    <div class="table-container">
-        <table class="content-table" id="PHOTOGRAPHY">
-            <thead>
-                <tr>
-                    <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
-                        <center>PHOTOGRAPHY</center>
-                    </th>
-                </tr>
-                <tr>
-                    <th>Rank</th>
-                    <th>Department</th>
-                    <th>Points</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="active-row">
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="table-container">
-        <table class="content-table" id="REEL MAKING">
-            <thead>
-                <tr>
-                    <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
-                        <center>REEL MAKING</center>
-                    </th>
-                </tr>
-                <tr>
-                    <th>Rank</th>
-                    <th>Department</th>
-                    <th>Points</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="active-row">
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="table-container">
-        <table class="content-table" id="MEME CREATION">
-            <thead>
-                <tr>
-                    <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
-                        <center>MEME CREATION</center>
-                    </th>
-                </tr>
-                <tr>
-                    <th>Rank</th>
-                    <th>Department</th>
-                    <th>Points</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="active-row">
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="table-container">
-        <table class="content-table" id="SHORT FILM">
-            <thead>
-                <tr>
-                    <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
-                        <center>SHORT FILM</center>
-                    </th>
-                </tr>
-                <tr>
-                    <th>Rank</th>
-                    <th>Department</th>
-                    <th>Points</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="active-row">
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    </div></center>
+    <main>
+        <div class="table-container-ev">
+            <table class="content-table-ev">
+                <thead>
+                    <tr>
+                        <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
+                            <center>STREET PLAY (Prelims)</center>
+                        </th>
+                    </tr>
+                   <tr>
+                        <th>Rank</th>
+                        <th>Department</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <TR class="active-row">
+                        <TD>1</TD>
+                        <TD>-</TD>
+                        <TD>-</TD>
+                    </TR>
+                    <tr>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container-ev">
+            <table class="content-table-ev">
+                <thead>
+                    <tr>
+                        <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
+                            <center>FOLK DANCE (Prelims)</center>
+                        </th>
+                    </tr>
+                   <tr>
+                        <th>Rank</th>
+                        <th>Department</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <TR class="active-row">
+                        <TD>1</TD>
+                        <TD>-</TD>
+                        <TD>-</TD>
+                    </TR>
+                    <tr>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container-ev">
+            <table class="content-table-ev">
+                <thead>
+                    <tr>
+                        <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
+                            <center>THEME DANCE (Prelims)</center>
+                        </th>
+                    </tr>
+                   <tr>
+                        <th>Rank</th>
+                        <th>Department</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <TR class="active-row">
+                        <TD>1</TD>
+                        <TD>-</TD>
+                        <TD>-</TD>
+                    </TR>
+                    <tr>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container-ev">
+            <table class="content-table-ev">
+                <thead>
+                    <tr>
+                        <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
+                            <center>WESTERN MUSIC (Prelims)</center>
+                        </th>
+                    </tr>
+                   <tr>
+                        <th>Rank</th>
+                        <th>Department</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <TR class="active-row">
+                        <TD>1</TD>
+                        <TD>-</TD>
+                        <TD>-</TD>
+                    </TR>
+                    <tr>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container-ev">
+            <table class="content-table-ev">
+                <thead>
+                    <tr>
+                        <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
+                            <center>LIGHTS CAMERA ACTION (Prelims)</center>
+                        </th>
+                    </tr>
+                   <tr>
+                        <th>Rank</th>
+                        <th>Department</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <TR class="active-row">
+                        <TD>1</TD>
+                        <TD>-</TD>
+                        <TD>-</TD>
+                    </TR>
+                    <tr>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container-ev">
+            <table class="content-table-ev">
+                <thead>
+                    <tr>
+                        <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
+                            <center>WESTERN DANCE (Prelims)</center>
+                        </th>
+                    </tr>
+                   <tr>
+                        <th>Rank</th>
+                        <th>Department</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <TR class="active-row">
+                        <TD>1</TD>
+                        <TD>-</TD>
+                        <TD>-</TD>
+                    </TR>
+                    <tr>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container-ev">
+            <table class="content-table-ev">
+                <thead>
+                    <tr>
+                        <th colspan="3" style="color: rgb(0, 0, 82);" class="table-head">
+                            <center>LIGHT MUSIC (Prelims)</center>
+                        </th>
+                    </tr>
+                   <tr>
+                        <th>Rank</th>
+                        <th>Department</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <TR class="active-row">
+                        <TD>1</TD>
+                        <TD>-</TD>
+                        <TD>-</TD>
+                    </TR>
+                    <tr>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+    
+    
+    
     <footer>
-        <p>
-            &nbsp;
-        </p>
+        <hr color="white" align="center" width="90%">
+        <div class="lsc">
+            <div class="lsc-img">
+                <img src="../../images/LSC25-LOGO ONLY.png" class="LSC25-LOGO" alt="LSC25-LOGO">
+            </div>
+            <div class="lscimg">
+                <img src="../../images/LSCT.png" alt="text-lsc" width="300px" height="auto">
+            </div>
+            <div class="contact">
+                <p class="heading2">
+                    CONTACT
+                </p>
+                <div class="comp1">
+                    <div class="mail1">
+                        <a href="mailto:deanofstudentss1@loyolacollege.edu">deanofstudentss1@loyolacollege.edu</a>
+                    </div>
+                    <div class="mail2">
+                        <a href="mailto:deanofstudentss2@loyolacollege.edu">deanofstudentss2@loyolacollege.edu</a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <center>
+            <p style="color:white;">
+                &copy;&nbsp;Copyrighted by Loyola Students' Council
+            </p>
+        </center>
+        
     </footer>
-</form>
+    <script src="script.js"></script>
 </body>
 </html>
