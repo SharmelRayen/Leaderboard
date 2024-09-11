@@ -12,9 +12,10 @@ body {
     justify-content: space-between; 
     width: 100%;
     max-width: 1200px; 
-    margin-left: 0;
+    margin-left: 30px;
     margin-right: 0;
     margin-bottom: 20px;
+    /* position: relative; */
 }
 
 .logoLeft, .logoRight {
@@ -185,6 +186,14 @@ header {
     padding-top: 0px;
     margin-top: 0px;
 }
+
+.comp1{
+    display: block;
+}
+.mail1,.mail2{
+    padding-top: 10px;
+    color: rgb(245, 191, 12);
+}
 .navbar-toggle {
     display: none;
     background: #333;
@@ -201,7 +210,7 @@ header {
     right: -250px; /* Align drawer to the right */
     width: 250px;
     height: 100%;
-    background: #333;
+    background: #0c0c0c;
     color: #fff;
     transition: right 0.3s;
     overflow-y: auto;
@@ -216,6 +225,7 @@ header {
 
 .drawer ul li {
     padding: 15px;
+    padding-left: 30px;
 }
 
 .drawer ul li a {
@@ -225,7 +235,9 @@ header {
 }
 
 .drawer ul li a:hover {
-    background: #555;
+    padding: 2px 2px 2px 20px;
+    background: #002aff;
+    border-radius: 20px;
 }
 .heading2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -244,21 +256,24 @@ a{
     color: #fff;
     font-size: 1.5em;
     cursor: pointer;
-    padding: 10px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
-.comp1{
-    display: block;
-}
-.mail1,.mail2{
-    padding-top: 10px;
-    color: rgb(245, 191, 12);
-}
+
 
 .table-container-ev{
     width: 100%;
     max-width: 600px;
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 20px 20px 20px;
+}
+.ovations{
+    width: 300px;
+    height: auto;
+}
+.content-phone{
+    display:none;
 }
 
 .content-table-ev{
@@ -269,16 +284,128 @@ a{
     overflow: hidden;
     box-shadow: 0 0 20px rgb(0, 140, 255);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 450px) {
+    .container{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between; 
+        width: 100%;
+        max-width: 450px; 
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .logoLeft, .logoRight {
+        height: 28px;
+        width: auto;
+    }
+    .logoLeft {
+        margin-right: auto; 
+    }
+    
+    .logoRight {
+        margin-left: auto; 
+        padding-right: 0px;
+        padding-left: 40px;
+    }
     .navbar-menu {
         display: none; /* Hide horizontal menu on mobile */
     }
 
     .navbar-toggle {
-        display: block;
+        display: flex;
+        margin-left: 5px;
+        border-radius: 5px;
+        padding: 5px 8.5px 5px 8.5px;
+        font-size: 15px;
+        background-color: rgb(18, 18, 18);
+        border-color: white;
+        border-width: 5px;
+        margin-top: 0px;
     }
 
     .drawer {
         right: 0; /* Show drawer */
+    }
+    .Leaderboard {
+        text-align: left; /* Align content to the left */
+        width: 100%; /* Ensure it takes the full width */
+        max-width: 450px; /* Limit the maximum width */
+        margin: 0 auto; /* Center horizontally within the container */
+    }
+    .desc{
+        color: #ffffff;
+        max-width: 420px;
+        text-align: justify;
+        position: relative;
+        padding-top: 0px;
+        padding-left: 30px;
+    }
+    .Leaderboard{
+        display: block;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .Leaderboard .heading {
+        max-width: auto;
+        margin: 0;
+        padding-bottom: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        font-size: 50px;
+        text-align: center; /* Align heading text to the left */
+    }
+    .table-container {
+        display: block;
+        width: 100%;
+        max-width:420px;
+        padding: 30px 0px 0px 30px;
+        position: relative;
+    }
+    
+    .content-table {
+        border-collapse:collapse;
+        width: fit-content;
+        font-size: 0.9em;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgb(0, 140, 255);
+    }
+
+    .LSC25-LOGO{
+        padding-top: 40px;
+        width: 100px;
+        height: auto;
+        display: flex;
+    }
+    .lsc{
+        display: flex;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    .contact{
+        display: none;
+        /* align-content: center;
+        padding-left: 0px;
+        padding-top: 30px;*/
+    } 
+    .lscimg{
+        padding-bottom: 50px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .content-phone{
+        display: block;
+    }
+    .heading2-phone{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        font-size: 40px;
+        padding-left: 150px;
+    }
+    .comp1-phone{
+        padding-left: 85px;
+        padding-bottom: 20px;
     }
 }
