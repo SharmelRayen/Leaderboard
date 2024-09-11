@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    background: rgb(18, 18, 18);
+    background: rgb(1, 0, 28);
     margin: 0;
 }
 
@@ -210,7 +210,7 @@ header {
     right: -250px; /* Align drawer to the right */
     width: 250px;
     height: 100%;
-    background: #0c0c0c;
+    background: rgb(1, 0, 28);
     color: #fff;
     transition: right 0.3s;
     overflow-y: auto;
@@ -236,7 +236,7 @@ header {
 
 .drawer ul li a:hover {
     padding: 2px 2px 2px 20px;
-    background: #002aff;
+    background: rgb(0, 140, 255);
     border-radius: 20px;
 }
 .heading2{
@@ -251,9 +251,9 @@ a{
     position: absolute;
     top: 10px;
     left: 10px; /* Close button inside drawer */
-    background: #333;
+    background: #ffffff;
     border: none;
-    color: #fff;
+    color: #07002f;
     font-size: 1.5em;
     cursor: pointer;
     margin-top: 30px;
@@ -336,7 +336,7 @@ a{
     }
 
     .drawer {
-        right: 0; /* Show drawer */
+        right: -250px; /* Hide drawer */
     }
     .Leaderboard {
         text-align: left; /* Align content to the left */
