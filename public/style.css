@@ -1,9 +1,15 @@
+html{
+    height: -webkit-fill-available;
+}
 body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     background: rgb(1, 0, 28);
+    height: 100vh;
     margin: 0;
+    height: -webkit-fill-available;
+    width: 100vw;
 }
 
 .container {
@@ -190,7 +196,7 @@ header {
 .comp1{
     display: block;
 }
-.mail1,.mail2{
+.mail1,.mail2,.mail3{
     padding-top: 10px;
     color: rgb(245, 191, 12);
 }
@@ -260,7 +266,10 @@ a{
     padding: 10px 20px;
     border-radius: 10px;
 }
-
+.lscimg{
+    width:300px;
+    height:auto;
+}
 
 .table-container-ev{
     width: 100%;
@@ -288,12 +297,21 @@ a{
 .heading3{
     max-width: auto;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     font-size: 50px;
     text-align: center;
+}
+.heading4{
+    max-width: auto;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 40px;
 }
 @media (max-width: 450px) {
     .container{
@@ -324,15 +342,16 @@ a{
     }
 
     .navbar-toggle {
-        display: flex;
-        margin-left: 5px;
-        border-radius: 5px;
-        padding: 5px 8.5px 5px 8.5px;
-        font-size: 15px;
-        background-color: rgb(18, 18, 18);
-        border-color: white;
-        border-width: 5px;
-        margin-top: 0px;
+            display: flex;
+            margin-left: 0px;
+            border-radius: 5px;
+            padding: 5px 11px 5px 11px;
+            font-size: 25px;
+            color: rgb(242, 242, 242);
+            background-color: rgb(1, 0, 28);
+            border-color: white;
+            border-width: 5px;
+            margin-top: 0px;
     }
 
     .drawer {
@@ -398,7 +417,7 @@ a{
     .contact{
         display: none;
         /* align-content: center;
-        padding-left: 0px;
+        
         padding-top: 30px;*/
     } 
     .lscimg{
@@ -413,7 +432,7 @@ a{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: white;
         font-size: 40px;
-        padding-left: 150px;
+        padding-left: 155px;
     }
     .comp1-phone{
         padding-left: 85px;
@@ -429,4 +448,195 @@ a{
         font-size: 50px;
         text-align: center;
     }
+    .lscimg{
+        width:300px;
+        height:auto;
+    }
+    .heading4{
+        max-width: 450px;
+        margin: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    .comp1-phone .mail3-phone{
+        padding-left: 60px;
+    }
+    .comp1-phone .mail1-phone{
+        padding-left: 8px;
+    }
 }
+
+@media (max-width: 360px) {
+    .container{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between; 
+        width: 100%;
+        max-width: 360px; 
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .logoLeft, .logoRight {
+        height: 25px;
+        width: auto;
+    }
+    .logoLeft {
+        margin-right: auto; 
+    }
+    
+    .logoRight {
+        margin-left: auto; 
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    .navbar-menu {
+        display: none; /* Hide horizontal menu on mobile */
+    }
+
+    .navbar-toggle {
+        display: flex;
+        margin-left: 0px;
+        border-radius: 5px;
+        padding: 5px 11px 5px 11px;
+        font-size: 25px;
+        color: rgb(242, 242, 242);
+        background-color: rgb(1, 0, 28);
+        border-color: white;
+        border-width: 5px;
+        margin-top: 0px;
+    }
+
+    .drawer {
+        right: -250px; /* Hide drawer */
+    }
+    .Leaderboard {
+        text-align: left; /* Align content to the left */
+        width: 100%; /* Ensure it takes the full width */
+        max-width: 360px; /* Limit the maximum width */
+        margin: 0 auto; /* Center horizontally within the container */
+    }
+    .desc{
+        color: #ffffff;
+        max-width: 350px;
+        text-align: justify;
+        position: relative;
+        padding-top: 0px;
+        padding-left: 15px;
+    }
+    .Leaderboard{
+        display: block;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .Leaderboard .heading {
+        max-width: auto;
+        margin: 0;
+        padding-bottom: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        font-size: 50px;
+        text-align: center; /* Align heading text to the left */
+    }
+    .table-container {
+        display: block;
+        width: 100%;    
+        max-width:420px;
+        padding: 30px 10px 0px 12px;
+        position: relative;
+    }
+    
+    .content-table {
+        border-collapse:collapse;
+        width: fit-content;
+        font-size: 0.9em;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgb(0, 140, 255);
+    }
+
+    .LSC25-LOGO{
+        padding-top: 30px;
+        width: 80px;
+        height: auto;
+        display: flex;
+    }
+    .lsc{
+        display: flex;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    .lscimg{
+        width:220px;
+        height:auto;
+    }
+    .contact{
+        display: none;
+        /* align-content: center;
+        padding-left: 0px;
+        padding-top: 30px;*/
+    } 
+    .lscimg{
+        padding-bottom: 50px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .content-phone{
+        display: block;
+    }
+    .heading2-phone{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        font-size: 40px;
+        padding-left: 125px;
+    }
+    .comp1-phone{
+        padding-left: 48px;
+        padding-bottom: 20px;
+    }
+    .heading3{
+        max-width: auto;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
+    .heading4{
+        max-width: auto;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: center;
+        padding-left: 50px;
+    }
+    .comp1-phone .mail3-phone{
+        padding-left: 60px;
+    }
+    .comp1-phone .mail1-phone{
+        padding-left: 8px;
+    }
+    .heading2-phone{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        font-size: 40px;
+        padding-left: 112px;
+    }
+}
+
