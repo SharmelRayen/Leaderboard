@@ -313,7 +313,7 @@ a{
     color: white;
     font-size: 40px;
 }
-@media (max-width: 450px) {
+@media (max-width: 450px) and (max-width: 390px){
     .container{
         margin-top: 20px;
         display: flex;
