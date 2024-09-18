@@ -1,6 +1,3 @@
-html{
-    height: -webkit-fill-available;
-}
 body {
     font-family: sans-serif;
     display: flex;
@@ -8,8 +5,7 @@ body {
     background: rgb(1, 0, 28);
     height: 100vh;
     margin: 0;
-    height: -webkit-fill-available;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .container {
@@ -314,6 +310,9 @@ a{
     font-size: 40px;
 }
 @media (max-width: 450px){
+    /* html, body {
+        overflow: hidden;
+    } */
     .container{
         margin-top: 20px;
         display: flex;
@@ -336,6 +335,13 @@ a{
         margin-left: auto; 
         padding-right: 0px;
         padding-left: 40px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: center;
+        padding-left: 70px;
+        
     }
     .navbar-menu {
         display: none; /* Hide horizontal menu on mobile */
@@ -421,10 +427,13 @@ a{
         padding-top: 30px;*/
     } 
     .lscimg{
+        height: 100px;
+        width: auto;
         padding-bottom: 50px;
         padding-top: 0px;
         margin-top: 0px;
     }
+
     .content-phone{
         display: block;
     }
@@ -471,6 +480,7 @@ a{
 }
 
 @media (max-width: 360px) {
+
     .container{
         margin-top: 20px;
         display: flex;
@@ -625,6 +635,7 @@ a{
         justify-content: flex-end; /* Align items to the right */
         align-items: center;
         padding-left: 50px;
+        padding-right: 0px;
     }
     .comp1-phone .mail3-phone{
         padding-left: 60px;
